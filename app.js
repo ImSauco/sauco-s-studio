@@ -20,7 +20,7 @@ const lightboxKicker = document.querySelector('[data-lightbox-kicker]');
 const lightboxCloseButtons = document.querySelectorAll('[data-lightbox-close]');
 const lightboxPrevButton = document.querySelector('[data-lightbox-prev]');
 const lightboxNextButton = document.querySelector('[data-lightbox-next]');
-const supportsFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+const supportsFinePointer = window.matchMedia('(any-pointer: fine)').matches;
 
 // =========================
 // Estado compartido
@@ -162,11 +162,21 @@ window.addEventListener('load', () => {
 // =========================
 // Cursor custom en dispositivos compatibles
 // =========================
-if (supportsFinePointer && cursorRing && cursorDot) {
+if (cursorRing && cursorDot) {
   let cursorX = window.innerWidth / 2;
   let cursorY = window.innerHeight / 2;
   let ringX = cursorX;
   let ringY = cursorY;
+  let isCustomCursorEnabled = false;
+
+  const enableCustomCursor = () => {
+    if (isCustomCursorEnabled) {
+      return;
+    }
+
+    isCustomCursorEnabled = true;
+    document.body.classList.add('custom-cursor-enabled');
+  };
 
   const renderCursor = () => {
     ringX += (cursorX - ringX) * 0.18;
@@ -179,12 +189,28 @@ if (supportsFinePointer && cursorRing && cursorDot) {
   };
 
   window.addEventListener('pointermove', (event) => {
+    if (event.pointerType === 'touch') {
+      return;
+    }
+
+    if (event.pointerType === 'mouse' || event.pointerType === 'pen' || supportsFinePointer) {
+      enableCustomCursor();
+    }
+
+    if (!isCustomCursorEnabled) {
+      return;
+    }
+
     cursorX = event.clientX;
     cursorY = event.clientY;
     document.body.classList.add('cursor-active');
   });
 
   window.addEventListener('pointerdown', () => {
+    if (!isCustomCursorEnabled) {
+      return;
+    }
+
     document.body.classList.add('cursor-hover');
   });
 
@@ -198,6 +224,10 @@ if (supportsFinePointer && cursorRing && cursorDot) {
 
   interactiveElements.forEach((element) => {
     element.addEventListener('pointerenter', () => {
+      if (!isCustomCursorEnabled) {
+        return;
+      }
+
       document.body.classList.add('cursor-hover');
     });
 
@@ -212,6 +242,61 @@ if (supportsFinePointer && cursorRing && cursorDot) {
 // =========================
 // Navegacion movil
 // =========================
+const sectionRoutes = new Map([
+  ['inicio', '/'],
+  ['sobre-mi', '/sobre-mi'],
+  ['proyectos', '/proyectos'],
+  ['paquetes', '/paquetes'],
+  ['habilidades', '/habilidades'],
+  ['creadores', '/creadores'],
+  ['contacto', '/contacto'],
+]);
+
+const scrollToSection = (sectionId, shouldUpdateUrl = true) => {
+  const target = document.getElementById(sectionId);
+
+  if (!target) {
+    return false;
+  }
+
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  if (shouldUpdateUrl) {
+    const nextPath = sectionRoutes.get(sectionId) || `/${sectionId}`;
+    window.history.pushState({ sectionId }, '', nextPath);
+  }
+
+  return true;
+};
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const sectionId = link.getAttribute('href')?.slice(1);
+
+    if (!sectionId || !sectionRoutes.has(sectionId)) {
+      return;
+    }
+
+    event.preventDefault();
+    scrollToSection(sectionId);
+  });
+});
+
+const syncSectionFromPath = () => {
+  const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+  const matchedRoute = Array.from(sectionRoutes.entries()).find(([, route]) => route === currentPath);
+
+  if (!matchedRoute) {
+    return;
+  }
+
+  const [sectionId] = matchedRoute;
+  scrollToSection(sectionId, false);
+};
+
+window.addEventListener('popstate', syncSectionFromPath);
+window.addEventListener('load', syncSectionFromPath);
+
 if (menuToggle && siteNav) {
   menuToggle.addEventListener('click', () => {
     const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
