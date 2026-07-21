@@ -6,24 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- SEO / Social sharing -->
-	<meta name="description" content="Sauco's Studio, portfolio de Jaime Gómez. Diseño web, product design, dirección visual y contenido digital para marcas, creadores y proyectos digitales.">
+	<meta name="description" content="Sauco, firma creativa de Jaime Gómez. Diseño de producto digital, UX/UI, dirección visual y desarrollo web para marcas y negocios digitales.">
 	<meta name="robots" content="index, follow">
 	<meta name="theme-color" content="#0B0B0C">
 	<link rel="canonical" href="https://saucostudio.com/">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://saucostudio.com/">
-	<meta property="og:title" content="Sauco's Studio | Product Design, Web y Contenido Digital">
-	<meta property="og:description" content="Diseño web, product design, dirección visual y contenido digital para marcas, creadores y proyectos digitales.">
+	<meta property="og:title" content="Sauco | Diseño de producto digital y web">
+	<meta property="og:description" content="Diseño independiente de producto digital y web. Estrategia, UX/UI, dirección visual y desarrollo para marcas y negocios digitales.">
+	<meta property="og:site_name" content="Sauco">
 	<meta property="og:image" content="https://saucostudio.com/media/logos/og-image.png">
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
-	<meta property="og:image:alt" content="Identidad visual de Sauco's Studio con símbolo S y el texto Product design">
+	<meta property="og:image:alt" content="Identidad visual de Sauco, firma creativa de Jaime Gómez">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Sauco's Studio | Product Design, Web y Contenido Digital">
-	<meta name="twitter:description" content="Diseño web, product design, dirección visual y contenido digital para marcas, creadores y proyectos digitales.">
+	<meta name="twitter:title" content="Sauco | Diseño de producto digital y web">
+	<meta name="twitter:description" content="Diseño independiente de producto digital y web. Estrategia, UX/UI, dirección visual y desarrollo.">
 	<meta name="twitter:image" content="https://saucostudio.com/media/logos/og-image.png">
-	<title>Sauco's Studio | Product Design, Web y Contenido Digital</title>
+	<title>Sauco | Diseño de producto digital y web</title>
 
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" sizes="96x96" href="media/logos/favicon-96x96.png">
@@ -35,31 +36,41 @@
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
-		"@type": "ProfessionalService",
-		"name": "Sauco's Studio",
-		"url": "https://saucostudio.com/",
-		"image": "https://saucostudio.com/media/logos/og-image.png",
-		"description": "Diseño web, product design, dirección visual y contenido digital para marcas, creadores y proyectos digitales.",
-		"founder": {
-			"@type": "Person",
-			"name": "Jaime Gómez",
-			"jobTitle": "Product Designer",
-			"url": "https://saucostudio.com/",
-			"sameAs": [
-				"https://www.linkedin.com/in/jaimegomezbenito"
-			]
-		},
-		"email": "info@saucostudio.com",
-		"telephone": "+34696591974",
-		"areaServed": "ES",
-		"serviceType": [
-			"Product design",
-			"Diseño web",
-			"Dirección visual",
-			"Contenido digital"
-		],
-		"sameAs": [
-			"https://www.linkedin.com/in/jaimegomezbenito"
+		"@graph": [
+			{
+				"@type": "WebSite",
+				"@id": "https://saucostudio.com/#website",
+				"name": "Sauco",
+				"alternateName": ["Sauco by Jaime Gómez", "saucostudio.com"],
+				"url": "https://saucostudio.com/"
+			},
+			{
+				"@type": "Person",
+				"@id": "https://saucostudio.com/#jaime",
+				"name": "Jaime Gómez",
+				"alternateName": "Sauco",
+				"url": "https://saucostudio.com/",
+				"image": "https://saucostudio.com/media/logos/og-image.png",
+				"description": "Diseñador independiente de producto digital y web.",
+				"jobTitle": "Diseñador de producto digital y web",
+				"email": "info@saucostudio.com",
+				"telephone": "+34696591974",
+				"sameAs": ["https://www.linkedin.com/in/jaimegomezbenito"]
+			},
+			{
+				"@type": "ProfessionalService",
+				"@id": "https://saucostudio.com/#studio",
+				"name": "Sauco",
+				"alternateName": "Jaime Gómez — Diseño de producto digital y web",
+				"url": "https://saucostudio.com/",
+				"logo": "https://saucostudio.com/media/logos/favicon-192x192.png",
+				"image": "https://saucostudio.com/media/logos/og-image.png",
+				"founder": { "@id": "https://saucostudio.com/#jaime" },
+				"email": "info@saucostudio.com",
+				"telephone": "+34696591974",
+				"areaServed": "ES",
+				"serviceType": ["Diseño de producto digital", "Diseño web", "UX/UI", "Dirección visual", "Desarrollo front-end"]
+			}
 		]
 	}
 	</script>
@@ -86,11 +97,11 @@
 	<div class="site-shell">
 		<!-- Header / navegacion -->
 		<header class="site-header">
-			<a class="brand" href="#inicio" aria-label="Sauco's Studio, ir al inicio">
+			<a class="brand" href="#inicio" aria-label="Sauco, firma creativa de Jaime Gómez, ir al inicio">
 				<img class="brand-mark" src="media/logos/saucos-studio-logo.svg" alt="" width="88" height="88">
 				<span class="brand-copy">
-					<span class="brand-title">Sauco's Studio</span>
-					<span class="brand-subtitle">Product design</span>
+					<span class="brand-title">Sauco</span>
+					<span class="brand-subtitle">by Jaime Gómez · Product Designer</span>
 				</span>
 			</a>
 			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
@@ -98,10 +109,10 @@
 				<span></span>
 			</button>
 			<nav id="site-nav" class="site-nav">
-				<a href="#sobre-mi">Sobre mí</a>
+				<a href="#servicios">Servicios</a>
 				<a href="#proyectos">Proyectos</a>
 				<a href="#paquetes">Paquetes</a>
-				<a href="#habilidades">Habilidades</a>
+				<a href="#sobre-mi">Sobre mí</a>
 				<a href="#contacto">Contacto</a>
 			</nav>
 		</header>
@@ -113,56 +124,65 @@
 				<!-- Mensaje principal -->
 				<div class="hero-copy reveal-on-load">
 					<div class="hero-copy-topline">
-						<p class="eyebrow">Product Designer</p>
-						<p class="hero-stamp">Interfaz, dirección visual y criterio de producto</p>
+						<p class="eyebrow">Sauco · Firma creativa de Jaime Gómez</p>
+						<p class="hero-stamp">Producto · Web · Dirección visual</p>
 					</div>
-					<h1 class="kinetic-title">Diseño <span class="title-accent title-accent-gradient">productos digitales</span> con una mirada <span class="title-accent title-accent-serif">nacida en desarrollo</span> y afinada desde el <span class="title-accent title-accent-highlight">diseño.</span></h1>
-					<p class="hero-text">Diseño experiencias web y de producto con una base técnica que ayuda a ordenar decisiones, elevar la percepción de marca y construir interfaces con más intención.</p>
+					<h1 class="kinetic-title">Diseño <span class="title-accent title-accent-gradient">productos digitales</span> y webs que hacen <span class="title-accent title-accent-serif">visible tu valor.</span></h1>
+					<p class="hero-text">Convierto ideas complejas en experiencias claras, útiles y memorables. Estrategia, UX/UI y desarrollo con una sola dirección: la de tu negocio.</p>
 					<div class="hero-highlights" aria-label="Puntos clave del perfil">
-						<span>UX con criterio de negocio</span>
-						<span>UI con detalle visual</span>
-						<span>Lenguaje compartido con desarrollo</span>
+						<span>Estrategia antes que decoración</span>
+						<span>Diseño que llega a producción</span>
+						<span>Un interlocutor, de idea a web</span>
 					</div>
 					<div class="hero-actions">
 						<a class="button button-primary" href="#proyectos">Ver proyectos</a>
-						<a class="button button-secondary" href="#sobre-mi">Mi historia</a>
+						<a class="button button-secondary" href="#servicios">Cómo puedo ayudarte</a>
 					</div>
 				</div>
 
 				<!-- Resumen rapido del perfil -->
 				<aside class="hero-card depth-card reveal-on-load">
 					<div class="hero-card-glow"></div>
-					<p class="hero-card-label">Ahora mismo</p>
-					<p class="hero-card-lead">Ayudo a marcas y productos digitales a verse más claros, más sólidos y más memorables.</p>
+					<p class="hero-card-label">Diseño independiente</p>
+					<p class="hero-card-lead">Trabajo directo, sin capas innecesarias: una misma persona para pensar, diseñar y acompañar la implementación.</p>
 					<div class="hero-card-metric">
-						<span class="hero-card-value">2+</span>
-						<span class="hero-card-caption">años enfocado en producto y diseño digital</span>
+						<span class="hero-card-value">01</span>
+						<span class="hero-card-caption">criterio compartido de estrategia a entrega</span>
 					</div>
 					<ul>
-						<li>Product design con criterio visual</li>
-						<li>Base técnica para trabajar mejor con equipos de desarrollo</li>
-						<li>Aprendizaje continuo y mejora iterativa</li>
+						<li>Producto digital y UX/UI</li>
+						<li>Webs de marca orientadas a conversión</li>
+						<li>Dirección visual con base técnica</li>
 					</ul>
 					<div class="hero-card-footer">
-						<span>Research</span>
-						<span>Systems</span>
-						<span>Delivery</span>
+						<span>Pensar</span>
+						<span>Diseñar</span>
+						<span>Construir</span>
 					</div>
 				</aside>
+			</section>
+
+			<section class="positioning-strip reveal-on-load" aria-label="Posicionamiento de Sauco">
+				<p class="positioning-intro"><span>Producto, marca y tecnología</span> bajo una misma mirada. Sauco es la firma creativa con la que Jaime Gómez diseña y construye experiencias digitales.</p>
+				<div class="positioning-points">
+					<p><strong>01</strong><span>Claridad de producto</span></p>
+					<p><strong>02</strong><span>Identidad digital</span></p>
+					<p><strong>03</strong><span>Ejecución real</span></p>
+				</div>
 			</section>
 
 			<!-- Sobre mi -->
 			<section id="sobre-mi" class="content-section split-section reveal-on-scroll">
 				<!-- Titular de seccion -->
 				<div class="about-heading">
-					<p class="section-tag">Sobre mí</p>
-					<h2 class="kinetic-title">Entré en tech por <span class="title-accent title-accent-gradient">código.</span> Mi lugar natural acabó siendo el <span class="title-accent title-accent-serif">diseño.</span></h2>
+					<p class="section-tag">Jaime Gómez · Diseñador de producto</p>
+					<h2 class="kinetic-title">Entré por el <span class="title-accent title-accent-gradient">código.</span> Me quedé para diseñar <span class="title-accent title-accent-serif">mejores productos.</span></h2>
 				</div>
 
 				<!-- Cuerpo editorial / bio -->
 				<div class="about-copy">
 					<p>
-						Soy Jaime Gómez, Product Designer. Empecé mi recorrido en tecnología estudiando desarrollo web full stack en KeepCoding. Esa etapa me dio una base sólida para entender producto, lógica y colaboración con perfiles técnicos.
+						Soy Jaime Gómez, Product Designer, y Sauco es mi firma creativa. Empecé mi recorrido en tecnología estudiando desarrollo web full stack en KeepCoding. Esa etapa me dio una base sólida para entender producto, lógica y colaboración con perfiles técnicos.
 					</p>
 					<p>
 						Con el tiempo entendí que mi motivación real estaba en la parte más visual del producto: pensar interfaces, cuidar la experiencia y dar forma a sistemas digitales con criterio. Llevo dos años trabajando en este campo y sigo afinando mirada y proceso en cada proyecto.
@@ -360,23 +380,21 @@
 			</section>
 
 			<!-- Habilidades -->
-			<section id="habilidades" class="content-section reveal-on-scroll">
+			<section id="servicios" class="content-section reveal-on-scroll">
 				<div class="section-heading">
 					<div>
-						<p class="section-tag">Habilidades</p>
-						<h2 class="kinetic-title"><span class="title-accent title-accent-serif">Diseño,</span> producto y <span class="title-accent title-accent-gradient">base técnica</span></h2>
+						<p class="section-tag">Servicios</p>
+						<h2 class="kinetic-title">Una mirada de <span class="title-accent title-accent-serif">producto,</span> una ejecución <span class="title-accent title-accent-gradient">de principio a fin.</span></h2>
 					</div>
 				</div>
 
 				<div class="skill-list">
-					<span>Product Design</span>
-					<span>UX/UI</span>
-					<span>Visual Design</span>
-					<span>Design Systems</span>
-					<span>Prototipado</span>
-					<span>HTML/CSS</span>
-					<span>JavaScript</span>
-					<span>Colaboración con desarrollo</span>
+					<span>Diseño de producto digital</span>
+					<span>Diseño web estratégico</span>
+					<span>UX/UI y prototipado</span>
+					<span>Dirección visual</span>
+					<span>Sistemas de diseño</span>
+					<span>Desarrollo front-end</span>
 				</div>
 			</section>
 
@@ -516,7 +534,7 @@
 		<!-- Footer / legal -->
 		<footer class="site-footer">
 			<div class="footer-legal">
-				<p>© 2026 Sauco's Studio. Todos los derechos reservados.</p>
+				<p>© 2026 Jaime Gómez · Sauco. Todos los derechos reservados.</p>
 				<a href="legal/index.html">Aviso legal y privacidad</a>
 			</div>
 		</footer>

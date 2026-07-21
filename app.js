@@ -247,7 +247,7 @@ const sectionRoutes = new Map([
   ['sobre-mi', '/sobre-mi'],
   ['proyectos', '/proyectos'],
   ['paquetes', '/paquetes'],
-  ['habilidades', '/habilidades'],
+  ['servicios', '/servicios'],
   ['creadores', '/creadores'],
   ['contacto', '/contacto'],
 ]);
