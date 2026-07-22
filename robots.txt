@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://saucostudio.com/sitemap.xml
+Sitemap: https://gomadez.com/sitemap.xml

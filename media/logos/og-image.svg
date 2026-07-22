@@ -1,6 +1,6 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle ogDesc">
-  <title id="ogTitle">Sauco social card</title>
-  <desc id="ogDesc">Imagen social de Sauco, firma creativa de Jaime Gómez</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle ogDesc">
+  <title id="ogTitle">Jaime Gómez — Diseño de producto digital y web</title>
+  <desc id="ogDesc">Tarjeta social de Jaime Gómez, Product Designer</desc>
   <defs>
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f3efe6"/>
@@ -10,9 +10,10 @@
   <rect width="1200" height="630" fill="url(#bgGradient)"/>
   <circle cx="1040" cy="110" r="160" fill="#0d6b5d" opacity="0.08"/>
   <circle cx="180" cy="560" r="180" fill="#ff8552" opacity="0.10"/>
-  <image href="saucos-studio-logo.svg" x="105" y="100" width="250" height="430" preserveAspectRatio="xMidYMid meet"/>
-  <text x="445" y="225" fill="#171513" font-size="76" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="-2">Sauco</text>
+  <image href="favicon.svg" x="105" y="100" width="250" height="430" preserveAspectRatio="xMidYMid meet"/>
+  <text x="445" y="225" fill="#171513" font-size="68" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="-2">Jaime Gómez</text>
   <text x="449" y="290" fill="#ff8552" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="8">PRODUCT DESIGN</text>
-  <text x="445" y="390" fill="#5d534c" font-size="34" font-family="Arial, Helvetica, sans-serif">Firma creativa de Jaime Gómez.</text>
-  <text x="445" y="438" fill="#5d534c" font-size="34" font-family="Arial, Helvetica, sans-serif">Producto digital, diseño web y detalle visual.</text>
+  <text x="445" y="390" fill="#5d534c" font-size="34" font-family="Arial, Helvetica, sans-serif">Producto digital, UX/UI y diseño web.</text>
+  <text x="445" y="438" fill="#5d534c" font-size="34" font-family="Arial, Helvetica, sans-serif">Estrategia, dirección visual y desarrollo.</text>
+  <text x="445" y="505" fill="#ff8552" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="700">www.gomadez.com</text>
 </svg>
