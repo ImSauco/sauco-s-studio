@@ -22,7 +22,7 @@
   </defs>
 
   <g clip-path="url(#circleClip)">
-    <circle cx="540" cy="540" r="506" fill="url(#background)"/>
+    <circle cx="540" cy="540" r="506" fill="#5e6b63"/>
     <circle cx="300" cy="250" r="410" fill="url(#glow)"/>
     <circle cx="845" cy="830" r="360" fill="url(#glow)" opacity="0.55"/>
     <path d="M34 330H1046M34 540H1046M34 750H1046M330 34V1046M540 34V1046M750 34V1046" stroke="#e8e2d6" stroke-opacity="0.025" stroke-width="2"/>

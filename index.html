@@ -1,5 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+<!--
+	MAPA DEL DOCUMENTO
+	────────────────────────────────────────────────────────────
+	01. HEAD ............... Línea 27  · Metadatos, SEO, iconos y estilos
+	02. AMBIENTE GLOBAL .... Línea 111 · Cursor y decoración de fondo
+	03. HEADER ............. Línea 125 · Marca y navegación principal
+	04. HERO ............... Línea 156 · Presentación y propuesta de valor
+	05. POSICIONAMIENTO .... Línea 200 · Resumen de especialización
+	06. SOBRE MÍ ........... Línea 211 · Historia y principios
+	07. PROYECTOS .......... Línea 234 · Casos de estudio
+	    07.1 By Aura ................ Línea 247
+	    07.2 Fotografía Belenbuuur ... Línea 311
+	    07.3 YourWhy ................. Línea 375
+	08. PROCESO ............ Línea 442 · Metodología de trabajo
+	09. SERVICIOS .......... Línea 464 · Capacidades
+	10. PAQUETES ........... Línea 484 · Modalidades y precios
+	11. CREADORES .......... Línea 555 · Oferta de contenido
+	12. CONTACTO ........... Línea 589 · Canales de contacto
+	13. FOOTER ............. Línea 620 · Legal
+
+	Consejo: en VS Code usa Ctrl+K, Ctrl+0 para plegar todas las
+	regiones y Ctrl+K, Ctrl+J para desplegarlas.
+	Ctrl+G te lleva a la línea indicada.
+-->
+
+<!-- #region 01 · HEAD -->
 <head>
 	<!-- Meta base -->
 	<meta charset="UTF-8">
@@ -81,8 +107,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
+<!-- #endregion -->
 <body>
-	<!-- Capa visual global: cursores y ambiente -->
+	<!-- #region 02 · AMBIENTE GLOBAL -->
 	<div class="custom-cursor custom-cursor-ring" aria-hidden="true"></div>
 	<div class="custom-cursor custom-cursor-dot" aria-hidden="true"></div>
 	<div class="page-ambient" aria-hidden="true">
@@ -92,10 +119,11 @@
 		<span class="ambient-streak ambient-streak-one"></span>
 		<span class="ambient-streak ambient-streak-two"></span>
 	</div>
+	<!-- #endregion -->
 
 	<!-- Shell principal de la pagina -->
 	<div class="site-shell">
-		<!-- Header / navegacion -->
+		<!-- #region 03 · HEADER Y NAVEGACIÓN -->
 		<header class="site-header">
 			<a class="brand" href="#inicio" aria-label="Jaime Gómez Benito, Product Designer, ir al inicio">
 				<img class="brand-mark" src="media/logos/jaime-gomez-logo.svg" alt="" width="88" height="88">
@@ -111,15 +139,22 @@
 			<nav id="site-nav" class="site-nav">
 				<a href="#servicios">Servicios</a>
 				<a href="#proyectos">Proyectos</a>
+				<a href="#proceso">Proceso</a>
 				<a href="#paquetes">Paquetes</a>
 				<a href="#sobre-mi">Sobre mí</a>
 				<a href="#contacto">Contacto</a>
 			</nav>
 		</header>
 
+		<a class="persistent-cta" href="#contacto" aria-label="Contarme tu proyecto">
+			<span class="persistent-cta-dot" aria-hidden="true"></span>
+			<span>Cuéntame tu proyecto</span>
+		</a>
+		<!-- #endregion -->
+
 		<!-- Contenido principal -->
 		<main>
-			<!-- Hero -->
+			<!-- #region 04 · HERO -->
 			<section id="inicio" class="hero">
 				<!-- Mensaje principal -->
 				<div class="hero-copy reveal-on-load">
@@ -128,7 +163,7 @@
 						<p class="hero-stamp">Producto · Web · Dirección visual</p>
 					</div>
 					<h1 class="kinetic-title">Diseño <span class="title-accent title-accent-gradient">productos digitales</span> y webs que hacen <span class="title-accent title-accent-serif">visible tu valor.</span></h1>
-					<p class="hero-text">Convierto ideas complejas en experiencias claras, útiles y memorables. Estrategia, UX/UI y desarrollo con una sola dirección: la de tu negocio.</p>
+					<p class="hero-text">Ordeno el mensaje, diseño la experiencia y construyo la web para que tu producto se entienda y sea más fácil elegirlo.</p>
 					<div class="hero-highlights" aria-label="Puntos clave del perfil">
 						<span>Estrategia antes que decoración</span>
 						<span>Diseño que llega a producción</span>
@@ -161,7 +196,9 @@
 					</div>
 				</aside>
 			</section>
+			<!-- #endregion -->
 
+			<!-- #region 05 · POSICIONAMIENTO -->
 			<section class="positioning-strip reveal-on-load" aria-label="Posicionamiento profesional de Jaime Gómez Benito">
 				<p class="positioning-intro"><span>Producto, marca y tecnología</span> bajo una misma mirada. Jaime Gómez Benito diseña y construye experiencias digitales de principio a fin.</p>
 				<div class="positioning-points">
@@ -170,8 +207,9 @@
 					<p><strong>03</strong><span>Ejecución real</span></p>
 				</div>
 			</section>
+			<!-- #endregion -->
 
-			<!-- Sobre mi -->
+			<!-- #region 06 · SOBRE MÍ -->
 			<section id="sobre-mi" class="content-section split-section reveal-on-scroll">
 				<!-- Titular de seccion -->
 				<div class="about-heading">
@@ -181,19 +219,20 @@
 
 				<!-- Cuerpo editorial / bio -->
 				<div class="about-copy">
-					<p>
-						Soy Jaime, Product Designer. Empecé mi recorrido en tecnología estudiando desarrollo web full stack en KeepCoding. Esa etapa me dio una base sólida para entender producto, lógica y colaboración con perfiles técnicos.
-					</p>
-					<p>
-						Con el tiempo entendí que mi motivación real estaba en la parte más visual del producto: pensar interfaces, cuidar la experiencia y dar forma a sistemas digitales con criterio. Llevo dos años trabajando en este campo y sigo afinando mirada y proceso en cada proyecto.
-					</p>
-					<p>
-						Hoy combino sensibilidad visual, pensamiento de producto y una base técnica que me permite diseñar con más contexto y conversar mejor con desarrollo.
-					</p>
+					<p class="about-lead">Me obsesiona ese momento en el que una idea deja de sentirse confusa y empieza a parecer inevitable.</p>
+					<p>Soy Jaime, Product Designer. Entré en el diseño desde el desarrollo web full stack, así que no pienso las interfaces como imágenes aisladas: necesito entender qué resuelven, cómo se comportan y qué hace falta para llevarlas a producción.</p>
+					<p>Trabajo cerca de la estrategia y todavía más cerca del detalle. Me gusta hacer las preguntas incómodas al principio, reducir ruido y encontrar una dirección visual con personalidad que siga siendo útil para el negocio.</p>
+					<p>No llego con una fórmula cerrada. Escucho, ordeno, diseño y construyo contigo para que el resultado se sienta propio, no sacado de una plantilla.</p>
+					<div class="about-principles" aria-label="Principios de trabajo">
+						<span><strong>01</strong> Claridad antes que ruido</span>
+						<span><strong>02</strong> Criterio antes que tendencias</span>
+						<span><strong>03</strong> Diseño listo para vivir</span>
+					</div>
 				</div>
 			</section>
+			<!-- #endregion -->
 
-			<!-- Proyectos -->
+			<!-- #region 07 · PROYECTOS -->
 			<section id="proyectos" class="content-section reveal-on-scroll">
 				<!-- Introduccion de bloque -->
 				<div class="section-heading">
@@ -206,7 +245,7 @@
 
 				<!-- Grid de proyectos -->
 				<div class="project-grid">
-					<!-- Proyecto 01: By Aura -->
+					<!-- #region 07.1 · BY AURA -->
 					<article class="project-card project-card-brand depth-card reveal-on-scroll">
 						<!-- Columna editorial -->
 						<div class="project-card-story">
@@ -219,9 +258,15 @@
 									<p class="project-card-kicker">By Aura</p>
 									<h3>Identidad visual + presencia digital</h3>
 								</div>
-								<span class="project-card-status">Marca wellness con una presencia más limpia, más clara y mejor resuelta</span>
+								<span class="project-card-status">Una identidad digital que traduce el bienestar de la marca sin recurrir a los códigos visuales de siempre</span>
 							</div>
-							<p class="project-card-intro">Un trabajo centrado en ordenar identidad, relato y web para que la marca proyecte más solidez, más claridad y una confianza mejor construida.</p>
+							<p class="project-card-intro">Reorganicé el relato y reduje el ruido visual para que servicios, filosofía y forma de contacto se entendieran en un solo recorrido.</p>
+							<div class="case-study-flow">
+								<div><span>Contexto</span><p>La marca no se había creado todavía. No tenía presencia digital previa, ni identidad visual definida. Era una marca recién nacida.</p></div>
+								<div><span>Reto</span><p>Crear una identidad visual y una presencia digital desde cero que reflejara los valores de la marca y generara confianza en los usuarios. Desde el logo, la tipografía y la paleta de colores hasta la estructura del sitio web.</p></div>
+								<div><span>Decisión clave</span><p>Priorizar la claridad y la coherencia en todos los elementos de la marca, desde la identidad visual hasta la experiencia digital para dar mucho valor a su mensaje</p></div>
+								<div class="case-study-result"><span>Resultado</span><p>Una presencia serena y consistente que conecta identidad, contenido y producto en un mismo espacio, generando una experiencia de marca coherente y confiable.</p></div>
+							</div>
 							<div class="project-image-popups" aria-label="Capturas del proyecto By Aura">
 								<figure class="project-image-popup project-image-popup-main">
 									<img src="media/projects/aura1.png" alt="Captura principal de la web de By Aura" loading="lazy" decoding="async">
@@ -237,16 +282,16 @@
 								<div class="project-card-block">
 									<p class="project-card-label">Trabajo realizado</p>
 									<ul class="project-card-list">
-										<li>Dirección visual más precisa y coherente</li>
-										<li>Un relato de marca mejor ordenado</li>
+										<li>Dirección visual precisa y coherente</li>
+										<li>Un relato de marca ordenado</li>
 										<li>Una web pensada como presentación clara de la marca</li>
 									</ul>
 								</div>
 								<div class="project-card-block">
 									<p class="project-card-label">Lo que aporta</p>
 									<ul class="project-card-list">
-										<li>Una percepción de marca más sobria y segura</li>
-										<li>Una presencia digital más clara</li>
+										<li>Una percepción de marca sobria y segura</li>
+										<li>Servicios, filosofía y contacto conectados en un único recorrido</li>
 										<li>Una base visual consistente para seguir creciendo</li>
 									</ul>
 								</div>
@@ -262,8 +307,9 @@
 						</div>
 
 					</article>
+					<!-- #endregion -->
 
-					<!-- Proyecto 02: Fotografia Belenbuuur -->
+					<!-- #region 07.2 · FOTOGRAFÍA BELENBUUUR -->
 					<article class="project-card project-card-spotlight depth-card reveal-on-scroll">
 						<!-- Columna editorial -->
 						<div class="project-card-story">
@@ -276,9 +322,15 @@
 									<p class="project-card-kicker">Fotografía Belenbuuur</p>
 									<h3>Dirección editorial + experiencia portfolio</h3>
 								</div>
-								<span class="project-card-status">Portfolio fotográfico planteado con más tono, más estructura y una edición más cuidada</span>
+								<span class="project-card-status">Un portfolio que organiza trabajos muy distintos sin uniformarlos ni quitar protagonismo a las fotografías</span>
 							</div>
-							<p class="project-card-intro">Un proyecto centrado en ordenar el archivo, cuidar el ritmo visual y construir una presencia digital con más criterio y más continuidad.</p>
+							<p class="project-card-intro">Organicé el archivo como una secuencia editorial: cada serie conserva su carácter y el conjunto se recorre sin perder el hilo.</p>
+							<div class="case-study-flow">
+								<div><span>Contexto</span><p>El trabajo fotográfico tenía una voz propia, pero convivía sin un archivo amplio dónde ser desplegado con estructura.</p></div>
+								<div><span>Reto</span><p>Diseñar un portfolio que expresara cada una de las facetas de la fotógrafa sin dejar de ver el plano general de su obra.</p></div>
+								<div><span>Decisión clave</span><p>Tratar la navegación como una secuencia editorial, dividiendo el contenido en secciones claras y jerarquizadas para guiar la mirada del usuario.</p></div>
+								<div class="case-study-result"><span>Resultado</span><p>Un espacio digital que se reconoce como parte de la obra y permite descubrirla con calma, contexto y continuidad.</p></div>
+							</div>
 							<div class="project-image-popups" aria-label="Capturas del proyecto Fotografía Belenbuuur">
 								<figure class="project-image-popup project-image-popup-main">
 									<img src="media/projects/belenbuuur1.png" alt="Captura principal del portfolio Fotografía Belenbuuur" loading="lazy" decoding="async">
@@ -319,8 +371,9 @@
 						</div>
 
 					</article>
+					<!-- #endregion -->
 
-					<!-- Proyecto 03: YourWhy -->
+					<!-- #region 07.3 · YOURWHY -->
 					<article class="project-card project-card-dashboard depth-card reveal-on-scroll">
 						<!-- Columna editorial -->
 						<div class="project-card-story">
@@ -333,9 +386,15 @@
 									<p class="project-card-kicker">YourWhy</p>
 									<h3>Landing de conversión + narrativa de marca</h3>
 								</div>
-								<span class="project-card-status">Una web orientada a captar leads con un discurso más claro, una jerarquía más firme y una propuesta mejor enfocada</span>
+								<span class="project-card-status">Una landing que explica el problema, presenta el método y conduce a reservar una llamada</span>
 							</div>
-							<p class="project-card-intro">Un proyecto pensado para presentar el método con más intención, guiar la lectura con claridad y convertir el interés en una llamada a la acción concreta.</p>
+							<p class="project-card-intro">Reorganicé historia personal, método y oferta para que cada bloque responda una pregunta y acerque al usuario al siguiente paso.</p>
+							<div class="case-study-flow">
+								<div><span>Contexto</span><p>La propuesta reunía historia personal, método y servicio, pero necesitaba un relato que conectara esas piezas sin perder al usuario.</p></div>
+								<div><span>Reto</span><p>Explicar una oferta compleja con rapidez y conducir desde la identificación inicial hasta una acción concreta.</p></div>
+								<div><span>Decisión clave</span><p>Construir la página como una conversación: problema, cambio posible, método y siguiente paso, con una única prioridad por bloque.</p></div>
+								<div class="case-study-result"><span>Resultado</span><p>Una narrativa más directa y una experiencia preparada para transformar interés en conversaciones cualificadas.</p></div>
+							</div>
 							<div class="project-image-popups" aria-label="Capturas del proyecto YourWhy">
 								<figure class="project-image-popup project-image-popup-main">
 									<img src="media/projects/yourwhy1.png" alt="Captura principal de la landing YourWhy" loading="lazy" decoding="async">
@@ -351,7 +410,7 @@
 								<div class="project-card-block">
 									<p class="project-card-label">Trabajo realizado</p>
 									<ul class="project-card-list">
-										<li>Una landing con un mensaje principal mucho más directo</li>
+										<li>Una landing con un mensaje principal directo</li>
 										<li>Jerarquía editorial para explicar método, prueba social y oferta</li>
 										<li>Un recorrido mobile-first pensado para convertir mejor</li>
 									</ul>
@@ -360,7 +419,7 @@
 									<p class="project-card-label">Lo que aporta</p>
 									<ul class="project-card-list">
 										<li>Una propuesta de valor entendible desde el primer vistazo</li>
-										<li>Más claridad entre historia personal, método y oferta</li>
+										<li>Historia personal, método y oferta separados en bloques fáciles de recorrer</li>
 										<li>Una base sólida para escalar captación y contenido</li>
 									</ul>
 								</div>
@@ -376,15 +435,39 @@
 						</div>
 
 					</article>
+					<!-- #endregion -->
 				</div>
 			</section>
+			<!-- #endregion -->
 
-			<!-- Habilidades -->
+			<!-- #region 08 · PROCESO -->
+			<section id="proceso" class="content-section process-section reveal-on-scroll">
+				<div class="section-heading process-heading">
+					<div>
+						<p class="section-tag">Proceso</p>
+						<h2 class="kinetic-title">De una idea dispersa a una dirección <span class="title-accent title-accent-gradient">clara y construida.</span></h2>
+					</div>
+					<p>Un proceso compartido, con decisiones visibles y entregables concretos en cada fase.</p>
+				</div>
+				<div class="process-grid">
+					<article class="process-step"><span>01</span><p class="process-kicker">Entender</p><h3>Aterrizamos el problema</h3><p>Objetivos, público, contexto y límites. Antes de diseñar, acordamos qué necesita cambiar y cómo sabremos que vamos bien.</p><small>Brief · sesión inicial · prioridades</small></article>
+					<article class="process-step"><span>02</span><p class="process-kicker">Enfocar</p><h3>Definimos la dirección</h3><p>Ordeno contenido, recorrido y referencias para convertir lo aprendido en una idea visual y estratégica compartida.</p><small>Estructura · concepto · dirección visual</small></article>
+					<article class="process-step"><span>03</span><p class="process-kicker">Diseñar</p><h3>Damos forma al sistema</h3><p>Diseño las pantallas, pruebo decisiones y construyo un lenguaje consistente que funcione en todos los tamaños.</p><small>UX/UI · prototipo · iteraciones</small></article>
+					<article class="process-step"><span>04</span><p class="process-kicker">Construir</p><h3>Lo llevamos a producción</h3><p>Desarrollo, ajusto y reviso la experiencia real para que el resultado conserve la intención con la que fue diseñado.</p><small>Desarrollo · QA · lanzamiento</small></article>
+				</div>
+				<div class="process-cta">
+					<p>¿Tienes una idea todavía difícil de explicar?</p>
+					<a class="button button-primary" href="#contacto">Vamos a darle forma</a>
+				</div>
+			</section>
+			<!-- #endregion -->
+
+			<!-- #region 09 · SERVICIOS -->
 			<section id="servicios" class="content-section reveal-on-scroll">
 				<div class="section-heading">
 					<div>
 						<p class="section-tag">Servicios</p>
-						<h2 class="kinetic-title">Una mirada de <span class="title-accent title-accent-serif">producto,</span> una ejecución <span class="title-accent title-accent-gradient">de principio a fin.</span></h2>
+						<h2 class="kinetic-title">Defino qué contar, diseño cómo se recorre y lo convierto en una web <span class="title-accent title-accent-gradient">lista para funcionar.</span></h2>
 					</div>
 				</div>
 
@@ -397,15 +480,16 @@
 					<span>Desarrollo front-end</span>
 				</div>
 			</section>
+			<!-- #endregion -->
 
-			<!-- Paquetes -->
+			<!-- #region 10 · PAQUETES -->
 			<section id="paquetes" class="content-section reveal-on-scroll packages-section">
 				<div class="packages-shell">
 					<div class="packages-intro">
 						<p class="section-tag">Paquetes</p>
 						<h2 class="packages-title">Tres formas de <span class="title-accent title-accent-gradient">crear</span> tu proyecto.</h2>
-						<p class="packages-copy">Desde una base sólida y bien resuelta hasta una propuesta con más dirección visual, más detalle y más recorrido.</p>
-						<p class="packages-note">Cada nivel amplía alcance, intención visual y profundidad estratégica. *Precios sin IVA.</p>
+						<p class="packages-copy">Elige según lo que necesitas construir: una landing, una web de marca o una identidad digital completa.</p>
+						<p class="packages-note">Cada nivel incorpora nuevas páginas, entregables y decisiones de diseño. *Precios sin IVA.</p>
 					</div>
 
 					<div class="packages-rail">
@@ -416,7 +500,7 @@
 							</div>
 							<div class="package-band-body">
 								<p class="package-band-kicker">La base adecuada para empezar con criterio.</p>
-								<p class="package-band-summary">Pensado para lanzar una web sencilla, clara y funcional, con una presencia cuidada desde el primer momento.</p>
+								<p class="package-band-summary">Para presentar una oferta concreta en una sola página y empezar a recibir contactos sin montar una web compleja.</p>
 								<ul class="package-list">
 									<li>Landing de 1 página</li>
 									<li>Responsive</li>
@@ -434,7 +518,7 @@
 							</div>
 							<div class="package-band-body">
 								<p class="package-band-kicker">La opción más equilibrada para una web de marca.</p>
-								<p class="package-band-summary">El punto en el que se encuentran claridad comercial, diseño personalizado y una presencia visual más intencional. Ideal para marcas que ya cuentan con identidad gráfica y quieren traducirla bien a su web.</p>
+								<p class="package-band-summary">Para marcas que ya tienen identidad gráfica y necesitan convertirla en una web propia, con espacio para explicar servicios, enfoque y formas de contacto.</p>
 								<ul class="package-list">
 									<li>Hasta 5 secciones</li>
 									<li>Diseño personalizado</li>
@@ -452,7 +536,7 @@
 							</div>
 							<div class="package-band-body">
 								<p class="package-band-kicker">Para marcas que necesitan construir algo con más ambición.</p>
-								<p class="package-band-summary">Una propuesta con más profundidad creativa, mayor criterio estratégico y una presencia digital pensada para crecer con solidez. Especialmente adecuado para marcas que parten de cero y necesitan una identidad visual a la altura de lo que quieren construir.</p>
+								<p class="package-band-summary">Para proyectos que parten de cero: definimos identidad visual, mensaje y web como un único sistema preparado para incorporar nuevas páginas y contenidos.</p>
 								<ul class="package-list">
 									<li>Branding visual</li>
 									<li>Dirección creativa</li>
@@ -467,12 +551,13 @@
 					</div>
 				</div>
 			</section>
+			<!-- #endregion -->
 
-			<!-- Creadores de contenido -->
+			<!-- #region 11 · CREADORES DE CONTENIDO -->
 			<section id="creadores" class="content-section reveal-on-scroll creators-section">
 				<div class="creators-heading">
 					<p class="section-tag">Creadores de contenido</p>
-					<h2 class="kinetic-title">Para grabar mejor, publicar con <span class="title-accent title-accent-highlight">más intención</span> y sostener un ritmo de contenido.</h2>
+					<h2 class="kinetic-title">De una idea suelta a contenido <span class="title-accent title-accent-highlight">grabado, editado y listo para publicar.</span></h2>
 				</div>
 
 				<article class="creators-offer reveal-on-scroll">
@@ -500,13 +585,14 @@
 					</div>
 				</article>
 			</section>
+			<!-- #endregion -->
 
-			<!-- Contacto -->
+			<!-- #region 12 · CONTACTO -->
 			<section id="contacto" class="content-section contact-section reveal-on-scroll">
 				<div class="contact-copy">
 					<p class="section-tag">Contacto</p>
-					<h2 class="kinetic-title">Si tu proyecto necesita <span class="title-accent title-accent-highlight">claridad,</span> <span class="title-accent title-accent-serif">criterio visual</span> y <span class="title-accent title-accent-gradient">una ejecución bien pensada,</span> hablemos.</h2>
-					<p class="contact-lead">Cuéntame en qué punto estás, qué necesitas resolver y qué tipo de presencia quieres construir. Si hay encaje, preparo una propuesta alineada con el alcance real del proyecto.</p>
+					<h2 class="kinetic-title">¿Necesitas ordenar tu oferta, renovar una web que ya no te representa o <span class="title-accent title-accent-gradient">lanzar algo desde cero?</span></h2>
+					<p class="contact-lead">Cuéntame qué estás construyendo y dónde te has atascado. Te responderé con una primera valoración y, si puedo ayudarte, una propuesta ajustada al trabajo necesario.</p>
 					<div class="contact-proof" aria-label="Puntos clave del contacto">
 						<span>Respuesta inicial clara y directa</span>
 						<span>Propuesta ajustada al alcance real</span>
@@ -529,15 +615,17 @@
 					</a>
 				</div>
 			</section>
+			<!-- #endregion -->
 		</main>
 
-		<!-- Footer / legal -->
+		<!-- #region 13 · FOOTER -->
 		<footer class="site-footer">
 			<div class="footer-legal">
 				<p>© 2026 Jaime Gómez Benito. Todos los derechos reservados.</p>
 				<a href="legal/index.html">Aviso legal y privacidad</a>
 			</div>
 		</footer>
+		<!-- #endregion -->
 	</div>
 
 	<!-- Scripts -->
