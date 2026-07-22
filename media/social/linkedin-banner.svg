@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396" role="img" aria-labelledby="bannerTitle bannerDesc">
+  <title id="bannerTitle">Jaime Gómez Benito — Product Designer</title>
+  <desc id="bannerDesc">Diseño digital con criterio y detalle</desc>
+  <defs>
+    <radialGradient id="greenGlow" cx="0" cy="0" r="1" gradientTransform="translate(92 72) rotate(28) scale(610 430)">
+      <stop offset="0" stop-color="#5e6b63" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0b0b0c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="warmGlow" cx="0" cy="0" r="1" gradientTransform="translate(1310 80) rotate(118) scale(390 300)">
+      <stop offset="0" stop-color="#cf8f67" stop-opacity="0.28"/>
+      <stop offset="0.55" stop-color="#b87f93" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#0b0b0c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headlineAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e3a27a"/>
+      <stop offset="0.5" stop-color="#c2d2d7"/>
+      <stop offset="1" stop-color="#d6a7b7"/>
+    </linearGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#e8e2d6" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1584" height="396" fill="#0b0b0c"/>
+  <rect width="1584" height="396" fill="url(#greenGlow)"/>
+  <rect width="1584" height="396" fill="url(#warmGlow)"/>
+  <rect width="1584" height="396" fill="url(#grid)"/>
+
+  <text x="18" y="51" fill="#e8e2d6" fill-opacity="0.045" font-size="116" font-family="Space Grotesk, Arial, sans-serif" font-weight="700" letter-spacing="-7">GOMADEZ</text>
+  <text x="1030" y="438" fill="#e8e2d6" fill-opacity="0.045" font-size="132" font-family="Space Grotesk, Arial, sans-serif" font-weight="700" letter-spacing="-8">GOMADEZ</text>
+
+  <image href="../logos/jaime-gomez-mark.svg" x="454" y="48" width="220" height="300" preserveAspectRatio="xMidYMid meet"/>
+
+  <g transform="translate(852 66)">
+    <text x="0" y="18" fill="#cf8f67" font-size="16" font-family="Manrope, Arial, sans-serif" font-weight="700" letter-spacing="5">JAIME GÓMEZ BENITO</text>
+    <text x="0" y="51" fill="#e8e2d6" fill-opacity="0.72" font-size="14" font-family="Manrope, Arial, sans-serif" font-weight="700" letter-spacing="4">PRODUCT DESIGNER</text>
+
+    <text x="0" y="116" fill="#e8e2d6" font-size="53" font-family="Space Grotesk, Arial, sans-serif" font-weight="700" letter-spacing="-2">Diseño digital</text>
+    <text x="0" y="174" fill="url(#headlineAccent)" font-size="58" font-family="Cormorant Garamond, Georgia, serif" font-weight="600">con criterio y detalle.</text>
+
+    <text x="0" y="221" fill="#e8e2d6" fill-opacity="0.72" font-size="18" font-family="Manrope, Arial, sans-serif">Producto, dirección visual y sistemas claros</text>
+    <text x="0" y="248" fill="#e8e2d6" fill-opacity="0.72" font-size="18" font-family="Manrope, Arial, sans-serif">para marcas y experiencias web.</text>
+    <text x="0" y="290" fill="#9cb6bf" font-size="16" font-family="Space Grotesk, Arial, sans-serif" font-weight="700" letter-spacing="1">www.gomadez.com</text>
+  </g>
+</svg>
